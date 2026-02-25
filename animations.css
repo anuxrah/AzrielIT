@@ -1,0 +1,50 @@
+/* Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.reveal-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease;
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease;
+}
+
+.reveal-left.active, .reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Hero Text Glow Pulse */
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 10px rgba(59, 130, 246, 0.3); }
+    50% { text-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
+    100% { text-shadow: 0 0 10px rgba(59, 130, 246, 0.3); }
+}
+
+.glow-text {
+    animation: glowPulse 3s infinite ease-in-out;
+}
