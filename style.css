@@ -474,4 +474,113 @@ select {
 }/* Move mobile menu icon to the right */
 #mobileMenuBtn {
     margin-left: auto !important;
+}/* Modern small founder image fix */
+.founder-img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(30,144,255,0.4);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+}
+
+/* Smooth glow hover */
+.founder-card:hover .founder-img {
+    transform: scale(1.05);
+    border-color: rgba(30,144,255,0.8);
+}/* REMOVE initials circle completely */
+.initials-circle {
+    display: none !important;
+}
+
+/* Founder card layout modern centered */
+.founder-card {
+    text-align: center !important;
+}
+
+/* Founder header = center align */
+.founder-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* PERFECT MODERN FOUNDER IMAGE FIX */
+.founder-img {
+    width: 140px;                /* bigger for clean look */
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;           /* ensures face stays centered */
+    object-position: center top; /* adjust face perfectly */
+    border: 2.5px solid rgba(30,144,255,0.45);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+    margin-bottom: 20px;
+    transition: 0.35s ease;
+}
+
+/* Hover glow effect */
+.founder-card:hover .founder-img {
+    transform: scale(1.07);
+    border-color: rgba(30,144,255,0.9);
+}
+
+/* Center role text */
+.founder-name h3,
+.founder-name .role,
+.handles-list,
+.founder-footer {
+    text-align: center !important;
+    width: 100%;
+}
+
+/* Center list also */
+.handles-list li {
+    padding-left: 0 !important;
+}
+.handles-list li::before {
+    left: auto !important;
+    margin-right: 6px;
+}/* Bigger modern founder image */
+.founder-img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid rgba(30,144,255,0.55);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.55);
+    margin-bottom: 25px;
+    transition: 0.35s ease;
+}
+
+/* Hover glow */
+.founder-card:hover .founder-img {
+    transform: scale(1.08);
+    border-color: rgba(30,144,255,0.9);
+}
+
+/* CENTER ALIGN LIST TEXT PERFECTLY */
+.handles-list {
+    text-align: center !important;
+    padding-left: 0 !important;
+}
+
+/* Remove original left arrow */
+.handles-list li {
+    list-style: none !important;
+    padding: 0 !important;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+/* New centered blue arrow */
+.handles-list li::before {
+    content: "→";
+    color: #1e90ff;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    left: 0;
 }
